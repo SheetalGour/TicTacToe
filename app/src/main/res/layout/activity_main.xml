@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sheetalgour.tictactoe.MainActivity">
+
+    <Button
+        android:id="@+id/press_to_start"
+        android:layout_width="218dp"
+        android:layout_height="162dp"
+        android:background="@android:color/holo_purple"
+        android:text="press to start"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.916" />
+    />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginTop="32dp"
+        android:text="Do you want to use X or O?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ButtonX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="X"
+        app:layout_constraintBottom_toTopOf="@+id/press_to_start"
+        app:layout_constraintStart_toStartOf="@+id/press_to_start" />
+
+    <Button
+        android:id="@+id/ButtonO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="O"
+        app:layout_constraintBottom_toTopOf="@+id/press_to_start"
+        app:layout_constraintEnd_toEndOf="@+id/press_to_start" />
+
+</android.support.constraint.ConstraintLayout>
