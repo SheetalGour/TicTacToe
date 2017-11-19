@@ -19,7 +19,7 @@ private String computer = "";
         pressToStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "It's working!!!!!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "GAME STAERTED", Toast.LENGTH_SHORT).show();
                 if (!currentplayer.equals("") && !computer.equals("")) {
                     Intent start_game_intent = new Intent(MainActivity.this,GameActivity.class);
                     start_game_intent.putExtra("player", currentplayer);
@@ -36,7 +36,7 @@ private String computer = "";
             ButtonX.setOnClickListener(new View.OnClickListener() {
                                            @Override
                                            public void onClick(View view) {
-                                               Toast.makeText(MainActivity.this, "Done", Toast.LENGTH_SHORT).show();
+                                               Toast.makeText(MainActivity.this, "Player X", Toast.LENGTH_SHORT).show();
                                               currentplayer = "X";
                                               computer = "O";
 
@@ -45,7 +45,7 @@ private String computer = "";
         ButtonO.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "Done", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Player O", Toast.LENGTH_SHORT).show();
                 currentplayer = "O";
                 computer = "X";
 
