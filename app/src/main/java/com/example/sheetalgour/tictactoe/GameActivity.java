@@ -136,7 +136,7 @@ public class GameActivity extends AppCompatActivity {
             String winner = gameState.get(0);
             Toast.makeText(GameActivity.this, "WINNER " + currentplayer, Toast.LENGTH_SHORT).show();
             startActivity(new Intent(this, MainActivity.class));
-            Thread.sleep(<10>);
+            
 
         }
         else if (gameState.get(3).equals(gameState.get(4)) && gameState.get(4).equals(gameState.get(5)) && gameState.get(3) != "") {
